@@ -8,3 +8,14 @@ http://biecek.pl/BetaBit/Warszawa
 
 Zainstaluj i włącz pakiet `proton` a następnie podążaj za instrukcjami.
 Czy uda Ci się złamać hasło Pietraszki?
+
+```{Ruby}
+if (!require(devtools)) {
+    install.packages("devtools")
+    require(devtools)
+}
+install_github("BetaAndBit/PieczaraPietraszki/proton")
+```
+
+## Autor: 
+> Przemysław Biecek, przemyslaw.biecek@gmail.com
