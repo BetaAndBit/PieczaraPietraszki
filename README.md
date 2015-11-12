@@ -15,6 +15,9 @@ if (!require(devtools)) {
     require(devtools)
 }
 install_github("BetaAndBit/PieczaraPietraszki/proton")
+
+# Start gry
+library(proton)
 ```
 
 ## Autor: 
