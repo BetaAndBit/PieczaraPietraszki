@@ -51,28 +51,31 @@ texts <- c(
   3. Wykorzystać funkcję `arrange` aby posortować listę serwerów po częstości logowania.
   ",
   proton.login.weak = "Najsłabszym punktem logowania do Protona jest Jan Niebezpieczny.
-Spróbuj znaleźć jego login.
-",
+  Spróbuj znaleźć jego login.
+  ",
   pas.2 = "DHbb7QXppuHnaXGN",
   proton.final = "Gratulacje!
 
-Złamałeś hasło Sławomira Pietraszki!
-Tajne plany jego labortorium stoją przed Tobą otworem.
-Co jest w tym laboratorium?
-Możesz przeczytać w opowiadaniu Pieczara Pietraszki dostępnym na stronie
-http://biecek.pl/BetaBit/Warszawa
+  Złamałeś hasło Sławomira Pietraszki!
+  Tajne plany jego laboratorium stoją przed Tobą otworem.
+  Co jest w tym laboratorium?
+  Możesz przeczytać w opowiadaniu Pieczara Pietraszki dostępnym na stronie
+  http://biecek.pl/BetaBit/Warszawa
 
-",
+  ",
   proton.host = "194.29.178.16",
   proton.host.instr = "Okazuje się, że Pietraszko często loguje się z publicznego komputera 194.29.178.16.
-Cóż za nieostrożność!
-Bit pobrał zawartość pliku `bash_history` z listą komend, które wpisywano do konsoli serwera.
-Jest szansa, że przypadkiem Pietraszko kiedyś do konsoli wpisał nieumyślnie hasło, myśląc, że loguje się na Protona.
-W zbiorze danych `bash_history` znajdują się wpisywane instrukcje i parametry.
-Wyłuskaj z tej listy tylko instrukcje (tylko napisy do spacji) i sprawdź, czy jeden z nich nie wygląda jak hasło.
-",
-  proton.host.instr.w = "Aby z każdej linii wyłuskać tylko nazwę istrukcji (napis do spacji), możesz wykorzystac funkcję `gsub` lub `strsplit`.
-Po wyłuskaniu tych instrukcji, sprawdz jak często która instrukcja jest używana. Może okaże się, że któraś z instrukcji wygląda jak hasło?
-"
+  Cóż za nieostrożność!
+  Bit pobrał zawartość pliku `bash_history` z listą komend, które wpisywano do konsoli serwera.
+  Jest szansa, że przypadkiem Pietraszko kiedyś do konsoli wpisał nieumyślnie hasło, myśląc, że loguje się na Protona.
+  W zbiorze danych `bash_history` znajdują się wpisywane instrukcje i parametry.
+  Wyłuskaj z tej listy tylko instrukcje (tylko napisy do spacji) i sprawdź, czy jeden z nich nie wygląda jak hasło.
+  ",
+  proton.host.instr.w = "Aby z każdej linii wyłuskać tylko nazwę instrukcji (napis do spacji), możesz wykorzystać funkcję `gsub` lub `strsplit`.
+  Po wyłuskaniu tych instrukcji, sprawdź jak często, która instrukcja jest używana. Może okaże się, że któraś z instrukcji wygląda jak hasło?
+
+  Jeżeli znajdziesz coś co wygląda jak hasło, użyj komendy `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` aby zalogować się do Protona.
+  "
 
 )
+

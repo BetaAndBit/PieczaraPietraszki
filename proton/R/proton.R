@@ -1,3 +1,25 @@
+#' @title Główna funkcja w grze ,,Włam do Protona''
+#'
+#' @description
+#' \code{proton} pozwala na wykonywanie rozmaitych zadań.
+#' Wystarczy rozwiazać cztery zagadki by włamać się na konto Pietraszki!
+#'
+#'
+#' @param ... Funkcja proton przyjmuje rózne argumenty w zależności od tego, którą zagadkę rozwiązujemy.
+#' W każdej sytuacji, jeżeli potrzebujemy dodatkowych wskazówek, należy dodać argument `wskazowka=TRUE`.
+#' Aby zalogować się do protona należy podać argumenty `action = \"login\", login=\"XYZ\", password=\"ABC\"`.
+#' Aby sprawdzić zawartość innego serwera, należy podać argumenty `action = \"server\", host=\"XYZ\"`.
+#'
+#' @author
+#' Przemysław Biecek, \email{przemyslaw.biecek@@gmail.com}
+#'
+#' @examples
+#' \dontrun{
+#' proton()
+#' proton(wskazowka=TRUE)
+#' }
+#' @rdname proton
+#' @export
 proton <- function(...) {
  args <- list(...)
  # plain start
