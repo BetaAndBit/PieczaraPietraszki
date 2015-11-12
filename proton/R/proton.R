@@ -1,11 +1,11 @@
 proton <- function(...) {
- args <- as.list(...)
+ args <- list(...)
  if (length(args) == 0) {
-    cat("Bit jest ciekaw co znajduje się na koncie tego dziwaka Pietraszki.\n
-        Aby to sprawdzić musi poznać jego hasło.\n
-        To jednak wcale nie jest proste, Pietraszko nie podda się prostym sztuczkom socjotechnicznym.\n
-        ")
-   return(NULL)
+    cat("Bit jest ciekaw co znajduje się na koncie tego dziwaka Pietraszki.
+Aby to sprawdzić musi poznać jego hasło.
+To jednak wcale nie jest proste, Pietraszko nie podda się prostym sztuczkom socjotechnicznym.
+")
+   return(invisible(NULL))
  }
 
  if(args$action == "login") {
