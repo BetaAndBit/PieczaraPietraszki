@@ -13,7 +13,12 @@ proton <- function(...) {
  # action = login
  if(length(args)>0 & args$action == "login") {
    # only user is set to janie
-   # only user is set
+   if (args$user == texts["log.1"] & is.null(args$pass)) {
+     cat(texts["proton.login.init"])
+     return(invisible(NULL))
+   }
+
+      # only user is set
    # user is set to janie and password is provided
    # user is set to slapie and password is provided
 

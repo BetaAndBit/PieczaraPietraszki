@@ -17,6 +17,16 @@ Pomóż mu w tym. Gdy już dowiesz się jaki to login, użyj komendy `proton(act
 Użyj do tego funkcji `filter` lub `arrange` z pakietu `dplyr`.
 ",
   log.1 = "janie",
-  pas.1 = "q1w2e3r4t5"
+  pas.1 = "q1w2e3r4t5",
+  proton.login.init = "Brawo, znasz już login Jana Niebezpiecznego!
+Najprawdopodobniej korzysta on z jakiegoś typowego hasła.
+Bit pobrał z internetu bazę 1000 najczęściej używanych haseł.
+Ta baza jest dostępna w wektorze `top1000passwords`.
+
+Zadanie 2: Znajdź hasło Jana Niebezpiecznego.
+
+Użyj komendy `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` aby zalogować się do serwera Proton.
+Jeżeli hasło będzie właściwe otrzymasz komunikat `Sukces! Użytkownik zalogowany!`,
+w przeciwnym przypadku otrzymasz kommunikat `Niepoprawne hasło lub użytkownik!`."
 
 )
