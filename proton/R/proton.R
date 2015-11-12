@@ -1,5 +1,6 @@
 proton <- function(...) {
  args <- list(...)
+ # plain start
  if (length(args) == 0) {
     cat(texts["proton.init"])
     return(invisible(NULL))
@@ -9,9 +10,15 @@ proton <- function(...) {
    return(invisible(NULL))
  }
 
- if(args$action == "login") {
-    if (args$user == "jkowal" & args$pass == "q1w2e3r4t5") {
-      return("Sukces! to jest to hasło!")
+ # action = login
+ if(length(args)>0 & args$action == "login") {
+   # only user is set to janie
+   # only user is set
+   # user is set to janie and password is provided
+   # user is set to slapie and password is provided
+
+    if (args$user == texts["log.1"] & args$pass == texts["pas.1"]) {
+      return("Sukces! Użytkownik zalogowany!")
     } else {
       return("Niepoprawne hasło lub użytkownik!")
     }

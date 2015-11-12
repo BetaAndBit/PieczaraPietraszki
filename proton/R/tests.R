@@ -15,6 +15,8 @@ Pomóż mu w tym. Gdy już dowiesz się jaki to login, użyj komendy `proton(act
   proton.init.w = "W zbiorze danych `pracownicy` znajdź wiersz, który w kolumnie `nazwisko` ma `Niebezieczny`.
 
 Użyj do tego funkcji `filter` lub `arrange` z pakietu `dplyr`.
-"
+",
+  log.1 = "janie",
+  pas.1 = "q1w2e3r4t5"
 
 )
