@@ -30,7 +30,20 @@ w przeciwnym przypadku otrzymasz kommunikat `Niepoprawne hasło lub użytkownik!
   pas.1 = "q1w2e3r4t5",
   proton.login.init.w = "Wykorzystaj metodę `Brute force`.
 W pętli, próbuj zalogować się kolejnymi hasłami ze zbioru `top1000passwords`.
-Próbuj tak długo, aż w wyniku otrzymasz komunikat `Sukces! Użytkownik zalogowany!`."
+Próbuj tak długo, aż w wyniku otrzymasz komunikat `Sukces! Użytkownik zalogowany!`.",
+  proton.login.fail = "Niepoprawne hasło lub użytkownik!",
+  proton.login.pass = "Sukces! Użytkownik zalogowany!",
+  proton.login.pass.instr = "Brawo, to jest właściwe hasło!
+Bit użył konta Jana Niebezpiecznego aby dostać się do serwera Proton.
+Teraz chce sprawdzić, skąd Pietraszko najczęściej loguje się do Protona.
+Być może wtedy znajdzie dalsze wskazówki.
+Z lgoów serwera Bit wyłuskał zbiór danych `logowania` z informacjami kto, kiedy i z jakiego komputera się logował.
+
+Zadanie 3: Sprawdź, z którego serwera Pietraszko się najczęściej loguje na serwer proton.
+
+Użyj komendy `proton(action = \"serwer\", host=\"XYZ\")` aby dowiedzieć się więcej o tym co można znaleźc na serwerze XYZ.
+
+"
 
 
 )

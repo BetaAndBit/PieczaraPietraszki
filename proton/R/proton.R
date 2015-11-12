@@ -21,6 +21,14 @@ proton <- function(...) {
      return(invisible(NULL))
    }
    # user is set to janie and password is provided
+   if (args$user == texts["log.1"] && !is.null(args$pass)) {
+     if (args$pass == texts["pas.1"]) {
+       cat(texts["proton.login.pass.instr"])
+       return(texts["proton.login.pass"])
+     } else {
+       return(texts["proton.login.fail"])
+     }
+   }
 
 
 
@@ -28,11 +36,6 @@ proton <- function(...) {
    # only user is set
    # user is set to slapie and password is provided
 
-    if (args$user == texts["log.1"] & args$pass == texts["pas.1"]) {
-      return("Sukces! Użytkownik zalogowany!")
-    } else {
-      return("Niepoprawne hasło lub użytkownik!")
-    }
  }
 
 }
