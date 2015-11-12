@@ -6,3 +6,4 @@ Description: Gra detektywistyczna. Celem gracza jest rozszyfrowanie hasła Pietr
 Depends: R (>= 3.2.2)
 License: GPL-2
 LazyData: true
+Encoding: UTF-8
