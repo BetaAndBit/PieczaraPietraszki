@@ -17,6 +17,7 @@ texts <- c(
   Użyj do tego funkcji `filter` lub `arrange` z pakietu `dplyr`.
   ",
   log.1 = "janie",
+  log.2 = "slap",
   proton.login.init = "Brawo, znasz już login Jana Niebezpiecznego!
   Najprawdopodobniej korzysta on z jakiegoś typowego hasła.
   Bit pobrał z Internetu bazę 1000 najczęściej używanych haseł.
@@ -41,13 +42,28 @@ texts <- c(
 
   Zadanie 3: Sprawdź, z którego serwera Pietraszko się najczęściej loguje na serwer Proton.
 
-  Użyj komendy `proton(action = \"serwer\", host=\"XYZ\")` aby dowiedzieć się więcej o tym co można znaleźć na serwerze XYZ.
+  Użyj komendy `proton(action = \"server\", host=\"XYZ\")` aby dowiedzieć się więcej o tym co można znaleźć na serwerze XYZ.
   Największe szanse na znalezienie czegoś ciekawego są na serwerze, z którego Pietraszko loguje się najczęściej.
   ",
   proton.login.pass.instr.w = "Aby dowiedzieć się z którego serwera Pietraszko się najczęściej loguje można:
   1. Wykorzystać funkcję `filter` aby wybrać tylko logowania Pietraszki (jaki ma login? sprawdź w bazie `pracownicy`),
   2. Wykorzystać funkcję `group_by` i `summarise` aby policzyć z którego serwera ile razy się logował,
   3. Wykorzystać funkcję `arrange` aby posortować listę serwerów po częstości logowania.
-  "
+  ",
+  proton.login.weak = "Najsłabszym punktem logowania do Protona jest Jan Niebezpieczny.
+Spróbuj znaleźć jego login.
+",
+  pas.2 = "DHbb7QXppuHnaXGN",
+  proton.final = "Gratulacje!
+
+Złamałeś hasło Sławomira Pietraszki!
+Tajne plany jego labortorium stoją przed Tobą otworem.
+Co jest w tym laboratorium?
+Możesz przeczytać w opowiadaniu Pieczara Pietraszki dostępnym na stronie
+http://biecek.pl/BetaBit/Warszawa
+
+",
+  proton.host = "194.29.178.16",
+  proton.host.instr = ""
 
 )
