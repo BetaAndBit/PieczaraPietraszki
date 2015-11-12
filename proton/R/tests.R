@@ -64,6 +64,15 @@ http://biecek.pl/BetaBit/Warszawa
 
 ",
   proton.host = "194.29.178.16",
-  proton.host.instr = ""
+  proton.host.instr = "Okazuje się, że Pietraszko często loguje się z publicznego komputera 194.29.178.16.
+Cóż za nieostrożność!
+Bit pobrał zawartość pliku `bash_history` z listą komend, które wpisywano do konsoli serwera.
+Jest szansa, że przypadkiem Pietraszko kiedyś do konsoli wpisał nieumyślnie hasło, myśląc, że loguje się na Protona.
+W zbiorze danych `bash_history` znajdują się wpisywane instrukcje i parametry.
+Wyłuskaj z tej listy tylko instrukcje (tylko napisy do spacji) i sprawdź, czy jeden z nich nie wygląda jak hasło.
+",
+  proton.host.instr.w = "Aby z każdej linii wyłuskać tylko nazwę istrukcji (napis do spacji), możesz wykorzystac funkcję `gsub` lub `strsplit`.
+Po wyłuskaniu tych instrukcji, sprawdz jak często która instrukcja jest używana. Może okaże się, że któraś z instrukcji wygląda jak hasło?
+"
 
 )
