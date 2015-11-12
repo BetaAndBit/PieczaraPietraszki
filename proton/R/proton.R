@@ -24,6 +24,9 @@ proton <- function(...) {
    if (args$user == texts["log.1"] && !is.null(args$pass)) {
      if (args$pass == texts["pas.1"]) {
        cat(texts["proton.login.pass.instr"])
+       if (!is.null(args$wskazowka) && args$wskazowka) {
+         cat("\n\nWSKAZÓWKA:\n",texts["proton.login.pass.instr.w"])
+       }
        return(texts["proton.login.pass"])
      } else {
        return(texts["proton.login.fail"])

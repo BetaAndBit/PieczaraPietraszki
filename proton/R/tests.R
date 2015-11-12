@@ -42,8 +42,12 @@ Z lgoów serwera Bit wyłuskał zbiór danych `logowania` z informacjami kto, ki
 Zadanie 3: Sprawdź, z którego serwera Pietraszko się najczęściej loguje na serwer proton.
 
 Użyj komendy `proton(action = \"serwer\", host=\"XYZ\")` aby dowiedzieć się więcej o tym co można znaleźc na serwerze XYZ.
-
-"
+Największe szanse na znalezienie czegoś ciekawego jest serwer, z którego Pietraszko loguje się najczęściej.
+",
+  proton.login.pass.instr.w = "Aby dowiedzieć się z którego serwera Pietraszko się najczęściej loguje można:
+1. Wykorzystać funkcję `filter` aby wybrać tylko logowania Pietraszki (jaki ma login? sprawdź w bazie `pracownicy`),
+2. Wykorzystać funkcję `group_by` i `summarise` aby policzyc z którego serwera ile razy się logował,
+3. Wykorzystać funkcję `arrange` aby posortowac listę serwerów po częstości logowania."
 
 
 )
