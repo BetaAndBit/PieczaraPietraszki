@@ -29,3 +29,6 @@ tmp <- rbind(df[,c(1,2,7)], data.frame(imie="Sławomir", nazwisko="Pietraszko", 
 tmp <- tmp[sample(nrow(tmp)),]
 rownames(tmp) <- NULL
 
+
+dim(pracownicy)
+
