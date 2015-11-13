@@ -16,7 +16,7 @@ Kolejne kolumny w tym zbiorze danych opisują:
 \itemize{
   \item login. Login użytkownika, który loguje się do Protona.
   \item host. Adres IP komputera, z którego dochodziło do logowania do Protona.
-  \item data. Data lofowania do Protona. Wiersze są posortowane po tej kolumnie.
+  \item data. Data logowania do Protona. Wiersze są posortowane po tej kolumnie.
 }
 }
 \keyword{datasets}
