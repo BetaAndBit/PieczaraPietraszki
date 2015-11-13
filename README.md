@@ -20,5 +20,10 @@ install_github("BetaAndBit/PieczaraPietraszki/proton")
 library(proton)
 ```
 
-## Autor: 
-> Przemysław Biecek, przemyslaw.biecek@gmail.com
+## Autor 
+> Gra
+>   Przemysław Biecek, przemyslaw.biecek@gmail.com
+> 
+> Opowiadanie
+>   Magda Chudzian
+>   Przemysław Biecek
