@@ -21,9 +21,9 @@ library(proton)
 ```
 
 ## Autor 
-> Gra
+> Gra: 
 >   Przemysław Biecek, przemyslaw.biecek@gmail.com
 > 
-> Opowiadanie
->   Magda Chudzian
+> Opowiadanie: 
+>   Magda Chudzian, 
 >   Przemysław Biecek
