@@ -9,7 +9,7 @@
 data(pracownicy)
 }
 \description{
-Zbiór danych opisujących imiona, nazwiska i loginy praconików wydziału.
+Zbiór danych opisujących imiona, nazwiska i loginy pracowników wydziału.
 Kolejne kolumny w tym zbiorze danych opisują:
 }
 \details{
