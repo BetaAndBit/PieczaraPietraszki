@@ -1,10 +1,12 @@
 texts <- c(
 proton.start = "Zadanie PROTON wczytane!
+
 Twoim celem jest odnalezienie hasła Pietraszki na serwerze Proton. Tylko to pozwoli Bitowi poznać sekretne plany laboratorium. \n
 Wpisz komendę `proton()` aby rozpocząć przygodę.\n
-W każdej chwili, do komendy `proton()` możesz dodać argument `wskazowka=TRUE`, aby uzyskać dodatkową podpowiedź.
+W każdej chwili, do wykonywanej komendy możesz dodać argument `wskazowka=TRUE`, aby uzyskać dodatkową podpowiedź.
+Pierwsza podpowiedź wyświetli się przy instrukcji `proton(wskazowka=TRUE)`.
 ",
-proton.init = "Pietraszko korzysta z trudnego do odgadnięcia hasła. Spróbujemy się wpierw włamać na konto kogoś mniej rozgarniętego.
+proton.init = "Pietraszko korzysta z trudnego do odgadnięcia hasła. Spróbuj się wpierw włamać na konto kogoś mniej rozgarniętego.
 
 Wstępne rozpoznanie sugeruje, że Jan Niebezpieczny nie dba o bezpieczeństwo, może mieć proste do złamania hasło.
 Przeprowadzimy atak na jego konto.
