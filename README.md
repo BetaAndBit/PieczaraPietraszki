@@ -1,9 +1,3 @@
-# PieczaraPietraszki
-http://biecek.pl/BetaBit/Warszawa
-
-
-![Okładka z www](https://github.com/BetaAndBit/PieczaraPietraszki/raw/master/Zdjecia/okladka.png)
-
 # Zagraj w grę 'Włam do Protona'
 
 Zainstaluj i włącz pakiet `proton` a następnie podążaj za instrukcjami.
@@ -19,6 +13,13 @@ install_github("BetaAndBit/PieczaraPietraszki/proton")
 # Start gry
 library(proton)
 ```
+
+# Opowiadanie Pieczara Pietraszki
+
+Gra jest częścią opowiadania ,,Pieczara Pietraszki''. 
+Całe opowiadanie jest dostępne pod adresem http://biecek.pl/BetaBit/Warszawa
+
+![Okładka z www](https://github.com/BetaAndBit/PieczaraPietraszki/raw/master/Zdjecia/okladka.png)
 
 ## Autor 
 > Gra: 
