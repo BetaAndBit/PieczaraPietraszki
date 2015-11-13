@@ -48,7 +48,7 @@ proton <- function(...) {
  # action = login
  if(length(args)>0 && !is.null(args$action) && args$action == "login") {
    # only user is set to janie
-   if (args$user == texts["log.1"] && is.null(args$password)) {
+   if (!is.null(args$login) && args$login == texts["log.1"] && is.null(args$password)) {
      cat(texts["proton.login.init"])
      if (!is.null(args$wskazowka) && args$wskazowka) {
        cat("\n\nWSKAZÓWKA:\n",texts["proton.login.init.w"])
@@ -56,7 +56,7 @@ proton <- function(...) {
      return(invisible(NULL))
    }
    # user is set to janie and password is provided
-   if (args$user == texts["log.1"] && !is.null(args$password)) {
+   if (!is.null(args$login) && args$login == texts["log.1"] && !is.null(args$password)) {
      if (args$password == texts["pas.1"]) {
        cat(texts["proton.login.pass.instr"])
        if (!is.null(args$wskazowka) && args$wskazowka) {
@@ -68,13 +68,13 @@ proton <- function(...) {
      }
    }
    # only user is set
-   if (args$user != texts["log.1"] && is.null(args$password)) {
+   if (!is.null(args$login) && args$login != texts["log.1"] && is.null(args$password)) {
      cat(texts["proton.login.weak"])
      return(invisible(NULL))
    }
 
    # user is set to slapie and password is provided
-   if (args$user == texts["log.2"] && !is.null(args$password)) {
+   if (!is.null(args$login) && args$login == texts["log.2"] && !is.null(args$password)) {
      if (args$password == texts["pas.2"]) {
        cat(texts["proton.final"])
        return(texts["proton.login.pass"])
