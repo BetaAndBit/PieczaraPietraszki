@@ -16,6 +16,14 @@
 #'
 #' Aby zalogowac się do innego serwera niż proton, należy podać argumenty `action = "server", host="XYZ"`.
 #'
+#' Uwaga:
+#'
+#' Gra ,,Włam do Protona'' jest projektem edukacyjnym Fundacji SmarterPoland dostępnym bezpłatnie.
+#' Pomóż nam tworzyć kolejne gry edukacyjne przekazując darowiznę na konto fundacji wskazanym na stronie
+#' \url{http://smarterpoland.pl/index.php/fundacja/}.
+#' Nawet kwoty rzędu 10 zł uławtią nam tworzenie i utrzymywanie kolejnych projektów edukacyjnych!
+#' Dziękujemy!
+#'
 #' @author
 #' Przemysław Biecek, \email{przemyslaw.biecek@@gmail.com}, Fundacja SmarterPoland.pl
 #'
@@ -82,6 +90,11 @@ proton <- function(...) {
      }
      return(invisible(NULL))
    }
+   if(is.null(args$login)) {
+     cat("\nJeżeli ustawiasz action='login', to należy określić też argument login=.\n")
+     return(invisible(NULL))
+   }
+
    # user is set to janie and password is provided
    if (!is.null(args$login) && args$login == texts["log.1"] && !is.null(args$password)) {
      if (args$password == texts["pas.1"]) {

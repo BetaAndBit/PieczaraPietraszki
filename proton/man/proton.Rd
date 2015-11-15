@@ -23,6 +23,14 @@ Aby zalogować się do protona należy podać argumenty `action = "login", login
 Jeżeli hasło pasuje do loginu, wtedy uzyskamy komunikat o poprawnym zalogowaniu.
 
 Aby zalogowac się do innego serwera niż proton, należy podać argumenty `action = "server", host="XYZ"`.
+
+Uwaga:
+
+Gra ,,Włam do Protona'' jest projektem edukacyjnym Fundacji SmarterPoland dostępnym bezpłatnie.
+Pomóż nam tworzyć kolejne gry edukacyjne przekazując darowiznę na konto fundacji wskazanym na stronie
+\url{http://smarterpoland.pl/index.php/fundacja/}.
+Nawet kwoty rzędu 10 zł uławtią nam tworzenie i utrzymywanie kolejnych projektów edukacyjnych!
+Dziękujemy!
 }
 \examples{
 \dontrun{
