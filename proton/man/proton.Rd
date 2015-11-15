@@ -16,9 +16,12 @@ Wystarczy rozwiazać cztery zagadki by dostać się na konto Pietraszki!
 }
 \details{
 W każdej sytuacji, jeżeli potrzebujemy dodatkowych wskazówek, należy dodać argument `wskazowka=TRUE`.
+
 Aby dowiedzić się więcej o użtkowniku na serwerze proton należy podać argumenty `action = \"login\", login=\"XYZ\".
-Aby zalogować się do protona należy podać argumenty `action = \"login\", login=\"XYZ\", password=\"ABC\"`,
-jeżeli hasło pasuje do loginu, wtedy uzyskamy komunikat o poprawnym zalogowaniu.
+
+Aby zalogować się do protona należy podać argumenty `action = \"login\", login=\"XYZ\", password=\"ABC\"`.
+Jeżeli hasło pasuje do loginu, wtedy uzyskamy komunikat o poprawnym zalogowaniu.
+
 Aby zalogowac się do innego serwera niż proton, należy podać argumenty `action = \"server\", host=\"XYZ\"`.
 }
 \examples{
