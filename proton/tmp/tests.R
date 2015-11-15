@@ -85,3 +85,12 @@ Jeżeli znajdziesz coś co wygląda jak hasło, użyj komendy `proton(action = \
 "
 )
 
+dcode <- function(tex) {
+  liter <- sort(unique(unlist(strsplit(tex, split=""))))
+  names(liter) <- rev(liter)
+  sapply(strsplit(tex, split=""), function(x){
+    paste(liter[x], collapse="")
+  })
+}
+
+texts2 <- dcode(texts)

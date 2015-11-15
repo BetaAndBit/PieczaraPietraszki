@@ -1,3 +1,20 @@
 .onAttach <- function(...) {
-   packageStartupMessage(texts["proton.start"])
+  proton.start = "Zadanie PROTON wczytane!
+
+  Twoim celem jest odnalezienie hasła Pietraszki na serwerze Proton. Tylko to pozwoli Bitowi poznać sekretne plany laboratorium. \n
+  Wpisz komendę `proton()` aby rozpocząć przygodę.\n
+  W każdej chwili, do wykonywanej komendy możesz dodać argument `wskazowka=TRUE`, aby uzyskać dodatkową podpowiedź. Pierwsza podpowiedź wyświetli się przy instrukcji `proton(wskazowka=TRUE)`.
+  "
+
+   packageStartupMessage(proton.start)
 }
+
+
+dcode <- function(tex) {
+  liter <- sort(unique(unlist(strsplit(tex, split=""))))
+  names(liter) <- rev(liter)
+  sapply(strsplit(tex, split=""), function(x){
+    paste(liter[x], collapse="")
+  })
+}
+
