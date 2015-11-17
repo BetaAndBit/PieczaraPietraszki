@@ -1,0 +1,9 @@
+Package: proton
+Title: Gra PROTON z serii Pieczara Pietraszki.
+Version: 0.1
+Authors@R: person("Przemysław", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre"))
+Description: Gra detektywistyczna. Celem gracza jest rozszyfrowanie hasła Pietraszki.
+Depends: R (>= 3.2.2)
+License: GPL-2
+LazyData: true
+Encoding: UTF-8
