@@ -12,6 +12,7 @@ Description: 'Infiltration of the proton server' is a console-based game for dat
   Just the basics knowledge of R is required to play the game. But the more functions you know the more approaches you can try.
   The knowledge of dplyr is not required but may be very helpful.
   This game is linked with the ,,Pietraszko's Cave'' story available at http://biecek.pl/BetaBit/Warsaw.
+  You will find more about this series at http://biecek.pl/BetaBit.
 Depends:
     R (>= 3.2.2)
 License: GPL-2
