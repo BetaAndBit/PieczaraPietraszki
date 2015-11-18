@@ -1,9 +1,9 @@
 .onAttach <- function(...) {
-  proton.start = "Zadanie PROTON wczytane!
+  proton.start = "PROTON problem is now loaded!
 
-  Twoim celem jest odnalezienie hasła Pietraszki na serwerze Proton. Tylko to pozwoli Bitowi poznać sekretne plany laboratorium. \n
-  Wpisz komendę `proton()` aby rozpocząć przygodę.\n
-  W każdej chwili, do wykonywanej komendy możesz dodać argument `wskazowka=TRUE`, aby uzyskać dodatkową podpowiedź. Pierwsza podpowiedź wyświetli się przy instrukcji `proton(wskazowka=TRUE)`.
+  Your final destination is to find Pietraszko's password on the Proton server. This is the only way for Bit to find secret plans of laboratory. \n
+  Enter `proton()` command in order to start your incredible adventure. \n
+  Remember that at any time you may pass `hint=TRUE` argument to the executed command in order to get an additional hint. First hint will be displayed while executing `proton(hint=TRUE)` command.
   "
 
    packageStartupMessage(proton.start)

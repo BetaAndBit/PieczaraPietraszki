@@ -1,13 +1,12 @@
-#' Historia ostatnio wykonywanych poleceń.
-#'
-#' Wektor ostatnio wykonywanych poleceń.
-#' Każdy element wektora składa się z nazwy polecenia i argumentów polecenia,
-#' rozdzielonych spacją.
+#' The history of recently executed commands.
+#' 
+#' The character vector of recently executed commands.
+#' Each element of the vector consists of command's name and command's arguments 
+#' separated with a space.
 #'
 #' @docType data
 #' @keywords datasets
 #' @name bash_history
 #' @usage data(bash_history)
-#' @format Wektor z 19913 elementami.
+#' @format a character vector with 19913 elements.
 NULL
-
