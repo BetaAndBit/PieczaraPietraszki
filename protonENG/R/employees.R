@@ -1,6 +1,7 @@
-#' The database with employees of Elka Faculty of University of Technology.
+#' The database with employees of Faculty of Electronics and Information Technology of Warsaw University of Technology.
 #'
 #' The dataset describing names, surnames and faculty employees' logins.
+#' Note that it is an artificial dataset that imitates real database
 #' The subsequent columns in this dataset describe:
 #' \itemize{
 #'   \item name. The name of an employee.
