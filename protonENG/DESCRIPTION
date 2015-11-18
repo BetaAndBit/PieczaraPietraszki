@@ -1,5 +1,5 @@
 Package: proton
-Title: Infiltration of the proton server. A data-crunching-game from the Beta and Bit series.
+Title: Infiltration of the proton server. A data-crunching game from the Beta and Bit series.
 Version: 0.2
 Authors@R: c(
     person("Przemysław", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre")),
