@@ -1,11 +1,14 @@
 .onAttach <- function(...) {
-  proton.start = "PROTON problem is now loaded!
+  proton.start = " _____ _          _____         _              _____
+|_   _| |_ ___   |  _  |___ ___| |_ ___ ___   |   __|___ _____ ___
+  | | |   | -_|  |   __|  _| . |  _| . |   |  |  |  | .'|     | -_|
+  |_| |_|_|___|  |__|  |_| |___|_| |___|_|_|  |_____|__,|_|_|_|___|
 
-  Your final destination is to find Pietraszko's password on the Proton server. This is the only way for Bit to find secret plans of laboratory. \n
-  Enter `proton()` command in order to start your incredible adventure. \n
-  Remember that at any time you may pass `hint=TRUE` argument to the executed command in order to get an additional hint. First hint will be displayed while executing `proton(hint=TRUE)` command.
-  "
-
+Your goal is to find Slawomir Pietraszko's credentials for the Proton server.
+This is the only way for Bit to find secret plans of Pietraszko's laboratory. \n
+Enter the `proton()` command in order to start the adventure. \n
+Remember that at any time you may add `hint=TRUE` argument to the executed command in order to get additional suggestions.
+"
    packageStartupMessage(proton.start)
 }
 
