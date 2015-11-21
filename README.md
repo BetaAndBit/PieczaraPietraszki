@@ -1,4 +1,3 @@
-
 # Zagraj w grę 'Włam do Protona'
 
 Zainstaluj i włącz pakiet `proton` a następnie podążaj za instrukcjami.
@@ -26,6 +25,7 @@ install_github("BetaAndBit/PieczaraPietraszki/protonENG")
 # Start the game
 ibrary(proton)
 ```
+
 
 # Opowiadanie Pieczara Pietraszki
 
