@@ -1,10 +1,13 @@
 .onAttach <- function(...) {
   proton.start = "PROTON problem is now loaded!
 
-  Your final destination is to find Pietraszko's password on the Proton server. This is the only way for Bit to find secret plans of laboratory. \n
-  Enter `proton()` command in order to start your incredible adventure. \n
-  Remember that at any time you may pass `hint=TRUE` argument to the executed command in order to get an additional hint. First hint will be displayed while executing `proton(hint=TRUE)` command.
-  "
+Your final destination is to find Pietraszko's password on the Proton server.
+This is the only way for Bit to find secret plans of laboratory. \n
+Enter `proton()` command in order to start your incredible adventure. \n
+Remember that at any time you may pass `hint=TRUE` argument to the executed command
+in order to get an additional hint. First hint will be displayed while executing
+`proton(hint=TRUE)` command.
+"
 
    packageStartupMessage(proton.start)
 }
@@ -32,4 +35,3 @@ dcode <- function(tex) {
     paste(liter[x], collapse="")
   })
 }
-
