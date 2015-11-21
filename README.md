@@ -14,6 +14,19 @@ install_github("BetaAndBit/PieczaraPietraszki/proton")
 library(proton)
 ```
 
+# The English version
+
+Install and run the game with just three commands.
+
+```{Ruby}
+library(devtools)
+install_github("BetaAndBit/PieczaraPietraszki/protonENG")
+
+# Start the game
+ibrary(proton)
+```
+
+
 # Opowiadanie Pieczara Pietraszki
 
 Gra jest częścią opowiadania ,,Pieczara Pietraszki''. 
