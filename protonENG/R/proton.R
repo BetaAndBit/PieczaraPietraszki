@@ -45,26 +45,25 @@
 proton <- function(...) {
  args <- list(...)
 
- texts <- (structure(c("Pietraszko uses a password which is very difficult to guess.\nAt first try to hack an account of a person who is not as cautious as Pietraszko.\n\nBut who is the weakest point? Initial investigation suggests that John Insecure doesn't care about security and has account on the proton server. He may use a password which is easy to crack.\nLet's attack his account first!\n\nProblem 1: Find the login of John Insecure.\n\nBit has scrapped a basic employees data from the www web page of Technical University of Warsaw. The data is in the data frame `employees` . \nNow, his task is to find John Insecure's login in this dataset.\nHelp him in solving this issue.\nWhen you finally find what the John’s login is, use `proton(action = \"login\", login=\"XYZ\")` command, where XYZ is Insecure's login.\n",
-                            "In `employees` dataset try to find a row which has `Insecure` value in the `surname` column.\n\nPerhaps `filter` or `arrange` functions from `dplyr` package may be useful.\n",
+ texts <- (structure(c("Pietraszko uses a password which is very difficult to guess.\nAt first try to hack an account of a person who is not as cautious as Pietraszko.\n\nBut who is the weakest point? Initial investigation suggests that John Insecure doesn't care about security and has account on the proton server. He may use a password which is easy to crack.\nLet's attack his account first!\n\nProblem 1: Find the login of John Insecure.\n\nBit has scrapped employees data (names and logins) from the www web page of Technical University of Warsaw. The data is in the data.frame `employees`. \nNow, your task is to find John Insecure's login.\nWhen you finally find what the John’s login is, use `proton(action = \"login\", login=\"XYZ\")` command, where XYZ is Insecure's login.\n",
+                            "In `employees` dataset try to find a row which has `Insecure` value in the `surname` column.\n\Functions like `filter` or `arrange` from the `dplyr` package may be very useful.\n",
                             "johnins",
                             "slap",
-                            "Congratulations! You found out what John Insecure's login is!\nIt is highly likely that he uses some typical password.\nBit downloaded from the Internet the database with 1000 most commonly used passwords.\nYou can find this database it in the `top1000passwords` vector.\n\nProblem 2: Find John Insecure's password.\n\nUse `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` command in order to log into the Proton server.\nIf the password is correct, you will receive the following message:\n`Success! User is logged in!`.\nOtherwise you will get:\n`Password or login is incorrect!`.\n",
+                            "Congratulations! You found out what the John Insecure's login is!\nIt is highly likely that he uses some typical password.\nBit downloaded from the Internet the database with 1000 most commonly used passwords.\nYou can find this database it in the `top1000passwords` vector.\n\nProblem 2: Find the John Insecure's password.\n\nUse `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` command in order to log into the Proton server with given credentials.\nIf the password is correct, you will get the following message:\n`Success! User is logged in!`.\nOtherwise you will get:\n`Password or login is incorrect!`.\n",
                             "Use the brute force method.\nBy using a loop, try to log in with subsequent passwords from `top1000passwords` vector as long as you receive:\n`Success! User is logged in!`.\n",
                             "Password or login is incorrect",
                             "Success! User is logged in!",
-                            "Well done! This is the right password!\nBit used John Insecure's account in order to get into the Proton server.\nIt turns out that John has access to server logs.\nNow, Bit wants to check from which workstation Pietraszko is frequently logging into the Proton server. Bit hopes that there will be some useful data.  \n\nLogs that are on proton are available in the `logs` dataset. Consecutive columns contain information such as: who, when and from which computer logged into Proton.\n\nProblem 3: Check, from which server Pietraszko is logging the most often into the Proton server.\n\nUse `proton(action = \"server\", host=\"XYZ\")` command in order to learn more what can be found on the XYZ server.\nThe biggest chance to find something interesting, is to find a server from which Pietraszko is logging the most often.\n",
+                            "Well done! This is the right password!\nBit used John Insecure's account in order to log into the Proton server.\nIt turns out that John has access to server logs.\nNow, Bit wants to check from which workstation Pietraszko is frequently logging into the Proton server. Bit hopes that there will be some useful data.  \n\nLogs are in the `logs` dataset. \nConsecutive columns contain information such as: who, when and from which computer logged into Proton.\n\nProblem 3: Check, from which server Pietraszko is logging the most often into the Proton server.\n\nUse `proton(action = \"server\", host=\"XYZ\")` command in order to learn more what can be found on the XYZ server.\nThe biggest chance to find something interesting, is to find a server from which Pietraszko is logging the most often.\n\n",
                             "In order to get to know from which server Pietraszko is logging the most often one may:\n1. Use `filter` function to choose only Pietraszko's logs,\n2. Use `group_by` and `summarise` to count the number of Pietraszko's logs into separate servers,\n3. Use `arrange` function to sort servers' list by the frequency of logs.\n\nUse `employees` database in order to check what Pietraszko's login is.\n",
-                            "The weakest link of Proton server is John Insecure.\nTry to find his login.\n",
-                            "Congratulations!\n\nYou have cracked Pietraszko's password!\nSecret plans of his lab are now in your hands.\nWhat is in his lab?\nYou may read it in the Pietraszko's cave story which is available on \nhttp://biecek.pl/BetaBit/Warsaw.\n\nNext adventure of Beta and Bit will be available soon.",
-                            "194.29.178.16",
-                            "It turns out that Pietraszko often uses he public workstation 194.29.178.16.\nWhat a carelessness!\n\nBit infiltrated this workstation easily. He downloaded `bash_history` file which contains a list of all commands that were entered into the server's console.\nThe chances are that some time ago Pietraszko typed a password to the console by mistake; thinking that he logs into the Proton server.\n\nIn `bash_history` dataset you can find all commands and parameters.\nTry to extract only commands from this dataset (only strings before space) and check whether one of them looks like a password.\n",
-                            "Commands and parameters are space separated. In order to extract only names of commands from each line, you can use `gsub` or `strsplit` function.\nAfter having theses statements extracted you should check how often each statement is used.\nPerhaps it will turn out that one of instructions looks like a password?\n\nIf you find something which seems to be a password, you shall use `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` command in order to log into the Proton server.\n"
+                            "Nice try, but there is nothing interesting about this login.\nThe weakest link of Proton server is John Insecure.\nTry to find his login.\n",
+                            "Congratulations!\n\nYou have cracked Pietraszko's password!\nSecret plans of his lab are now in your hands.\nWhat is in this misteriouse lab?\nYou may read about it in the `Pietraszko's cave` story which is available on \nhttp://biecek.pl/BetaBit/Warsaw\n\nNext adventure of Beta and Bit will be available soon.\n\n",
+                            "It turns out that Pietraszko often uses the public workstation 194.29.178.16.\nWhat a carelessness!\n\nBit infiltrated this workstation easily. He downloaded `bash_history` file which contains a list of all commands that were entered into the server's console.\nThe chances are that some time ago Pietraszko typed a password to the console by mistake; thinking that he logs into the Proton server.\n\nProblem 4: Find the Pietraszko's password.\n\nIn the `bash_history` dataset you will find all commands and parameters that were entered.\nTry to extract only commands from this dataset (only strings before space) and check whether one of them looks like a password.\n",
+                            "Commands and parameters are separated by a space. In order to extract only names of commands from each line, you can use `gsub` or `strsplit` function.\nAfter having all commands extracted you should check how often each command is used.\nPerhaps it will turn out that one of typed in commands look like a password?\n\nIf you see something which looks like a password, you shall use `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` command to log into the Proton server with Pietraszko credentials.\n"
                             ), .Names = c("proton.init", "proton.init.w",
                                           "log.1", "log.2", "proton.login.init", "proton.login.init.w",
                                           "proton.login.fail", "proton.login.pass", "proton.login.pass.instr",
                                           "proton.login.pass.instr.w", "proton.login.weak", "proton.final",
-                                          "proton.host", "proton.host.instr", "proton.host.instr.w")
+                                          "proton.host.instr", "proton.host.instr.w")
                           )
 )
 
@@ -75,7 +74,7 @@ proton <- function(...) {
     return(invisible(NULL))
  }
  if (length(args) == 1 && !is.null(args$hint) && args$hint) {
-   cat(texts["proton.init"], "\n\nHINT:\n",texts["proton.init.w"])
+   cat(texts["proton.init"], "\n\nHINT:\n",texts["proton.init.w"], sep = "")
    return(invisible(NULL))
  }
 
@@ -84,7 +83,7 @@ proton <- function(...) {
   if (!is.null(args$host) && digest(args$host) == "94265570be658d9fafa4861d7252afa9") {
     cat(texts["proton.host.instr"])
     if (!is.null(args$hint) && args$hint) {
-      cat("\n\nHINT:\n",texts["proton.host.instr.w"])
+      cat("\n\nHINT:\n",texts["proton.host.instr.w"], sep = "")
     }
     return(invisible(NULL))
   } else {
@@ -98,7 +97,7 @@ proton <- function(...) {
    if (!is.null(args$login) && args$login == texts["log.1"] && is.null(args$password)) {
      cat(texts["proton.login.init"])
      if (!is.null(args$hint) && args$hint) {
-       cat("\n\nHINT:\n",texts["proton.login.init.w"])
+       cat("\nHINT:\n",texts["proton.login.init.w"], sep = "")
      }
      return(invisible(NULL))
    }
@@ -112,7 +111,7 @@ proton <- function(...) {
      if (digest(args$password) == "bbfb4a474b61b80225fd49d7c67e5a01") {
        cat(texts["proton.login.pass.instr"])
        if (!is.null(args$hint) && args$hint) {
-         cat("\n\nHINT:\n",texts["proton.login.pass.instr.w"])
+         cat("\nHINT:\n",texts["proton.login.pass.instr.w"], sep = "")
        }
        return(texts["proton.login.pass"])
      } else {
