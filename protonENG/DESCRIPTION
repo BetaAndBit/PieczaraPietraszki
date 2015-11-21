@@ -14,7 +14,7 @@ Description: 'Infiltration of the proton server' is a console-based game for dat
   This game is linked with the ,,Pietraszko's Cave'' story available at http://biecek.pl/BetaBit/Warsaw.
   You will find more about this series at http://biecek.pl/BetaBit.
 Depends:
-    R (>= 3.2.2)
+    R (>= 3.0)
 Imports:
     digest
 License: GPL-2
