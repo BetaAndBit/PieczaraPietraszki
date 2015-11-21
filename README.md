@@ -23,7 +23,7 @@ library(devtools)
 install_github("BetaAndBit/PieczaraPietraszki/protonENG")
 
 # Start the game
-ibrary(proton)
+library(proton)
 ```
 
 
