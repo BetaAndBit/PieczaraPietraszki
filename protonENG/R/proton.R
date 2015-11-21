@@ -32,7 +32,7 @@
 #' Thank you!
 #'
 #' @author
-#' Przemysław Biecek, \email{przemyslaw.biecek@@gmail.com}, SmarterPoland.pl Foundation.
+#' Przemyslaw Biecek, \email{przemyslaw.biecek@@gmail.com}, SmarterPoland.pl Foundation.
 #'
 #' @examples
 #' \dontrun{
@@ -45,7 +45,7 @@
 proton <- function(...) {
  args <- list(...)
 
- texts <- (structure(c("Pietraszko uses a password which is very difficult to guess.\nAt first try to hack an account of a person who is not as cautious as Pietraszko.\n\nBut who is the weakest point? Initial investigation suggests that John Insecure doesn't care about security and has account on the proton server. He may use a password which is easy to crack.\nLet's attack his account first!\n\nProblem 1: Find the login of John Insecure.\n\nBit has scrapped employees data (names and logins) from the www web page of Technical University of Warsaw. The data is in the data.frame `employees`. \nNow, your task is to find John Insecure's login.\nWhen you finally find what the John’s login is, use `proton(action = \"login\", login=\"XYZ\")` command, where XYZ is Insecure's login.\n",
+ texts <- (structure(c("Pietraszko uses a password which is very difficult to guess.\nAt first try to hack an account of a person who is not as cautious as Pietraszko.\n\nBut who is the weakest point? Initial investigation suggests that John Insecure doesn't care about security and has account on the Proton server. He may use a password which is easy to crack.\nLet's attack his account first!\n\nProblem 1: Find the login of John Insecure.\n\nBit has scrapped employees data (names and logins) from the www web page of Technical University of Warsaw. The data is in the data.frame `employees`. \nNow, your task is to find John Insecure's login.\nWhen you finally find what the John's login is, use `proton(action = \"login\", login=\"XYZ\")` command, where XYZ is Insecure's login.\n",
                             "In `employees` dataset try to find a row which has `Insecure` value in the `surname` column.\nFunctions like `filter` or `arrange` from the `dplyr` package may be very useful.\n",
                             "johnins",
                             "slap",
