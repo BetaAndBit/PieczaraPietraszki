@@ -46,7 +46,7 @@ proton <- function(...) {
  args <- list(...)
 
  texts <- (structure(c("Pietraszko uses a password which is very difficult to guess.\nAt first try to hack an account of a person who is not as cautious as Pietraszko.\n\nBut who is the weakest point? Initial investigation suggests that John Insecure doesn't care about security and has account on the proton server. He may use a password which is easy to crack.\nLet's attack his account first!\n\nProblem 1: Find the login of John Insecure.\n\nBit has scrapped employees data (names and logins) from the www web page of Technical University of Warsaw. The data is in the data.frame `employees`. \nNow, your task is to find John Insecure's login.\nWhen you finally find what the John’s login is, use `proton(action = \"login\", login=\"XYZ\")` command, where XYZ is Insecure's login.\n",
-                            "In `employees` dataset try to find a row which has `Insecure` value in the `surname` column.\n\Functions like `filter` or `arrange` from the `dplyr` package may be very useful.\n",
+                            "In `employees` dataset try to find a row which has `Insecure` value in the `surname` column.\nFunctions like `filter` or `arrange` from the `dplyr` package may be very useful.\n",
                             "johnins",
                             "slap",
                             "Congratulations! You found out what the John Insecure's login is!\nIt is highly likely that he uses some typical password.\nBit downloaded from the Internet the database with 1000 most commonly used passwords.\nYou can find this database it in the `top1000passwords` vector.\n\nProblem 2: Find the John Insecure's password.\n\nUse `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` command in order to log into the Proton server with given credentials.\nIf the password is correct, you will get the following message:\n`Success! User is logged in!`.\nOtherwise you will get:\n`Password or login is incorrect!`.\n",
@@ -58,12 +58,13 @@ proton <- function(...) {
                             "Nice try, but there is nothing interesting about this login.\nThe weakest link of Proton server is John Insecure.\nTry to find his login.\n",
                             "Congratulations!\n\nYou have cracked Pietraszko's password!\nSecret plans of his lab are now in your hands.\nWhat is in this misteriouse lab?\nYou may read about it in the `Pietraszko's cave` story which is available on \nhttp://biecek.pl/BetaBit/Warsaw\n\nNext adventure of Beta and Bit will be available soon.\n\n",
                             "It turns out that Pietraszko often uses the public workstation 194.29.178.16.\nWhat a carelessness!\n\nBit infiltrated this workstation easily. He downloaded `bash_history` file which contains a list of all commands that were entered into the server's console.\nThe chances are that some time ago Pietraszko typed a password to the console by mistake; thinking that he logs into the Proton server.\n\nProblem 4: Find the Pietraszko's password.\n\nIn the `bash_history` dataset you will find all commands and parameters that were entered.\nTry to extract only commands from this dataset (only strings before space) and check whether one of them looks like a password.\n",
-                            "Commands and parameters are separated by a space. In order to extract only names of commands from each line, you can use `gsub` or `strsplit` function.\nAfter having all commands extracted you should check how often each command is used.\nPerhaps it will turn out that one of typed in commands look like a password?\n\nIf you see something which looks like a password, you shall use `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` command to log into the Proton server with Pietraszko credentials.\n"
+                            "Commands and parameters are separated by a space. In order to extract only names of commands from each line, you can use `gsub` or `strsplit` function.\nAfter having all commands extracted you should check how often each command is used.\nPerhaps it will turn out that one of typed in commands look like a password?\n\nIf you see something which looks like a password, you shall use `proton(action = \"login\", login=\"XYZ\", password=\"ABC\")` command to log into the Proton server with Pietraszko credentials.\n",
+                            "Bit spent some time to infiltrate this workstation. \nBut there is nothing interesting here.\nFind the workstation which Pietraszko is using most often to log into the Proton server. "
                             ), .Names = c("proton.init", "proton.init.w",
                                           "log.1", "log.2", "proton.login.init", "proton.login.init.w",
                                           "proton.login.fail", "proton.login.pass", "proton.login.pass.instr",
                                           "proton.login.pass.instr.w", "proton.login.weak", "proton.final",
-                                          "proton.host.instr", "proton.host.instr.w")
+                                          "proton.host.instr", "proton.host.instr.w", "proton.host.instr.w2")
                           )
 )
 
@@ -87,7 +88,7 @@ proton <- function(...) {
     }
     return(invisible(NULL))
   } else {
-    cat(texts["proton.login.pass.instr.w"])
+    cat(texts["proton.login.pass.instr.w2"])
   }
  }
 
@@ -124,7 +125,7 @@ proton <- function(...) {
      return(invisible(NULL))
    }
 
-   # user is set to slapie and password is provided
+   # user is set to slap and password is provided
    if (!is.null(args$login) && args$login == texts["log.2"] && !is.null(args$password)) {
      if (digest(args$password) == "ce3494fef4545c1b6160e5430d7efe66") {
        cat(texts["proton.final"])
@@ -133,7 +134,5 @@ proton <- function(...) {
        return(texts["proton.login.fail"])
      }
    }
-
  }
-
 }
