@@ -1,30 +1,27 @@
-#' @title ,,Hack into Proton''
+#' @title Infiltration of the Proton server
 #'
 #' @description
-#' \code{proton} function enables a player to solve problems in ,,Hack into Proton'' game.
-#' It is sufficient to solve four riddles in order to get into Pietraszko's account!
+#' The \code{proton} function is used for solving problems in the data-based game ,,Infiltration of the proton server''.
+#' Solve four data-based puzzles in order to crack into the Pietraszko's account!
 #' 
 #' @param ... \code{proton} function is called by different arguments, which vary depending
-#' on a riddle that we try to solve. See \code{Details} in order to get to know how the
-#' whole list of arguments looks like.
+#' on a problem that Bit is trying to solve. See \code{Details} in order to learn more about the list of possible arguments.
 #'
-#' @details Every time when some additional hints are needed one should pass 
+#' @details Every time when some additional hints are needed one should add 
 #' \code{hint=TRUE} argument to the \code{proton} function.
 #' 
-#' In order to get some more information about a user on the Proton server  
+#' In order to get more information about a user on the Proton server  
 #' one should pass \code{action = "login"}, \code{login="XYZ"} arguments 
 #' to the \code{proton} function.
 #' 
 #' In order to log into the Proton server one should pass \code{action = "login"},
 #' \code{login="XYZ"}, \code{password="ABC"} arguments to the \code{proton} function.
-#' If the password matches login, then one will receive a message about correct log.
+#' If the password matches login, then one will receive a message about successful login.
 #'
 #' In order to log into a server different from Proton one should pass 
 #' \code{action = "server"}, \code{host="XYZ"} arguments to the \code{proton} function.
 #'
-#' \strong{Attention}:
-#'
-#' ,,Hack into Proton'' game is free of charge, educational project of the SmarterPoland.pl Foundation.
+#' The ,,Infiltration of the Proton server'' game is a free of charge, educational project of the SmarterPoland.pl Foundation.
 #' By transfering a donation on the foundation's account which is 
 #' shown on \url{http://smarterpoland.pl/index.php/fundacja/} site, you will help
 #' us to create another educational games. Even a sum of 10 $ will faciliate
