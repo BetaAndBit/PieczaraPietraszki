@@ -30,9 +30,9 @@ In order to log into a server different from Proton one should pass
 \code{action = "server"}, \code{host="XYZ"} arguments to the \code{proton} function.
 
 ,,The Proton Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
-By transfering a donation on the foundation's account which is
+By transferring a donation on the foundation's account which is
 shown on \url{http://smarterpoland.pl/index.php/fundacja/} site, you will help
-us to create another educational games. Even a sum of 10 $ will faciliate
+us to create another educational games. Even a sum of 10 $ will facilitate
 creating and maintaining subsequent educational projects!
 Thank you!
 }
