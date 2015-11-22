@@ -2,7 +2,7 @@
 % Please edit documentation in R/proton.R
 \name{proton}
 \alias{proton}
-\title{Infiltration of the Proton server}
+\title{The Proton Game}
 \usage{
 proton(...)
 }
@@ -11,7 +11,7 @@ proton(...)
 on a problem that Bit is trying to solve. See \code{Details} in order to learn more about the list of possible arguments.}
 }
 \description{
-The \code{proton} function is used for solving problems in the data-based game ,,Infiltration of the proton server''.
+The \code{proton} function is used for solving problems in the data-based game ,,The Proton Game''.
 Solve four data-based puzzles in order to crack into the Pietraszko's account!
 }
 \details{
@@ -29,7 +29,7 @@ If the password matches login, then one will receive a message about successful 
 In order to log into a server different from Proton one should pass
 \code{action = "server"}, \code{host="XYZ"} arguments to the \code{proton} function.
 
-The ,,Infiltration of the Proton server'' game is a free of charge, educational project of the SmarterPoland.pl Foundation.
+,,The Proton Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
 By transfering a donation on the foundation's account which is
 shown on \url{http://smarterpoland.pl/index.php/fundacja/} site, you will help
 us to create another educational games. Even a sum of 10 $ will faciliate
