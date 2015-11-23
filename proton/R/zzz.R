@@ -15,8 +15,13 @@ dcode <- function(tex) {
   liter <- c(letters, add)
   names(liter) <- c(rev(letters), add)
 
-  sapply(strsplit(tex, split=""), function(x){
+  res <- sapply(strsplit(tex, split=""), function(x){
     paste(liter[x], collapse="")
   })
+
+  if (.Platform$OS.type == 'windows') {
+    iconv(res, from = "UTF-8", to = "windows-1250")
+  }
+  res
 }
 
