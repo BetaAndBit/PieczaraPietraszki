@@ -6,11 +6,11 @@
   W każdej chwili, do wykonywanej komendy możesz dodać argument `wskazowka=TRUE`, aby uzyskać dodatkową podpowiedź. Pierwsza podpowiedź wyświetli się przy instrukcji `proton(wskazowka=TRUE)`.
   "
   if (.Platform$OS.type == 'windows') {
-    proton.start <- iconv(proton.start, from = "UTF-8", to = "windows-1250")
-    levels(pracownicy$nazwisko) <- iconv(levels(pracownicy$nazwisko), from = "UTF-8", to = "windows-1250")
-    levels(pracownicy$imie) <- iconv(levels(pracownicy$imie), from = "UTF-8", to = "windows-1250")
-    levels(pracownicy$login) <- iconv(levels(pracownicy$login), from = "UTF-8", to = "windows-1250")
-    levels(logowania$login) <- iconv(levels(logowania$login), from = "UTF-8", to = "windows-1250")
+    proton.start <- iconv(proton.start, from = "UTF-8", to = "windows-1250", sub = "byte")
+    levels(pracownicy$nazwisko) <- iconv(levels(pracownicy$nazwisko), from = "UTF-8", to = "windows-1250", sub = "byte")
+    levels(pracownicy$imie) <- iconv(levels(pracownicy$imie), from = "UTF-8", to = "windows-1250", sub = "byte")
+    levels(pracownicy$login) <- iconv(levels(pracownicy$login), from = "UTF-8", to = "windows-1250", sub = "byte")
+    levels(logowania$login) <- iconv(levels(logowania$login), from = "UTF-8", to = "windows-1250", sub = "byte")
     assign("pracownicy", pracownicy, envir = .GlobalEnv)
     assign("logowania", logowania, envir = .GlobalEnv)
   }
@@ -29,7 +29,7 @@ dcode <- function(tex) {
   })
 
   if (.Platform$OS.type == 'windows') {
-    res <- iconv(res, from = "UTF-8", to = "windows-1250")
+    res <- iconv(res, from = "UTF-8", to = "windows-1250", sub = "byte")
   }
   res
 }
