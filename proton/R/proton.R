@@ -55,7 +55,6 @@ proton <- function(...) {
                "proton.login.fail", "proton.login.pass", "proton.login.pass.instr",
                "proton.login.pass.instr.w", "proton.login.weak", "proton.final",
                "proton.host.instr", "proton.host.instr.w")))
- )
 
 
  # plain start
