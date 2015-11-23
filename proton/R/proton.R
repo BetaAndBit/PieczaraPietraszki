@@ -58,7 +58,7 @@ proton <- function(...) {
 
  wsk <- "WSKAZÓWKA"
  if (.Platform$OS.type == 'windows') {
-   wsk <- iconv(wsk, from = "UTF-8", to = "windows-1250")
+   wsk <- iconv(wsk, from = "UTF-8", to = "windows-1250", sub = "byte")
  }
 
  # plain start
