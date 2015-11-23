@@ -56,6 +56,10 @@ proton <- function(...) {
                "proton.login.pass.instr.w", "proton.login.weak", "proton.final",
                "proton.host.instr", "proton.host.instr.w")))
 
+ wsk <- "WSKAZÓWKA"
+ if (.Platform$OS.type == 'windows') {
+   wsk <- iconv(wsk, from = "UTF-8", to = "windows-1250")
+ }
 
  # plain start
  if (length(args) == 0) {
@@ -63,7 +67,7 @@ proton <- function(...) {
     return(invisible(NULL))
  }
  if (length(args) == 1 && !is.null(args$wskazowka) && args$wskazowka) {
-   cat(texts["proton.init"], "\n\nWSKAZÓWKA:\n",texts["proton.init.w"])
+   cat(texts["proton.init"], "\n\n",wsk,":\n",texts["proton.init.w"])
    return(invisible(NULL))
  }
 
@@ -72,7 +76,7 @@ proton <- function(...) {
   if (!is.null(args$host) && digest(args$host) == "94265570be658d9fafa4861d7252afa9") {
     cat(texts["proton.host.instr"])
     if (!is.null(args$wskazowka) && args$wskazowka) {
-      cat("\n\nWSKAZÓWKA:\n",texts["proton.host.instr.w"])
+      cat("\n\n",wsk,":\n",texts["proton.host.instr.w"])
     }
     return(invisible(NULL))
   } else {
@@ -86,7 +90,7 @@ proton <- function(...) {
    if (!is.null(args$login) && args$login == texts["log.1"] && is.null(args$password)) {
      cat(texts["proton.login.init"])
      if (!is.null(args$wskazowka) && args$wskazowka) {
-       cat("\n\nWSKAZÓWKA:\n",texts["proton.login.init.w"])
+       cat("\n\n",wsk,":\n",texts["proton.login.init.w"])
      }
      return(invisible(NULL))
    }
@@ -100,7 +104,7 @@ proton <- function(...) {
      if (digest(args$password) == "bbfb4a474b61b80225fd49d7c67e5a01") {
        cat(texts["proton.login.pass.instr"])
        if (!is.null(args$wskazowka) && args$wskazowka) {
-         cat("\n\nWSKAZÓWKA:\n",texts["proton.login.pass.instr.w"])
+         cat("\n\n",wsk,":\n",texts["proton.login.pass.instr.w"])
        }
        return(texts["proton.login.pass"])
      } else {

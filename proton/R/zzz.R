@@ -5,8 +5,11 @@
   Wpisz komendę `proton()` aby rozpocząć przygodę.\n
   W każdej chwili, do wykonywanej komendy możesz dodać argument `wskazowka=TRUE`, aby uzyskać dodatkową podpowiedź. Pierwsza podpowiedź wyświetli się przy instrukcji `proton(wskazowka=TRUE)`.
   "
+  if (.Platform$OS.type == 'windows') {
+    proton.start <- iconv(proton.start, from = "UTF-8", to = "windows-1250")
+  }
 
-   packageStartupMessage(proton.start)
+  packageStartupMessage(proton.start)
 }
 
 
@@ -20,7 +23,7 @@ dcode <- function(tex) {
   })
 
   if (.Platform$OS.type == 'windows') {
-    iconv(res, from = "UTF-8", to = "windows-1250")
+    res <- iconv(res, from = "UTF-8", to = "windows-1250")
   }
   res
 }
