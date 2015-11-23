@@ -11,7 +11,8 @@
     levels(pracownicy$imie) <- iconv(levels(pracownicy$imie), from = "UTF-8", to = "windows-1250")
     levels(pracownicy$login) <- iconv(levels(pracownicy$login), from = "UTF-8", to = "windows-1250")
     levels(logowania$login) <- iconv(levels(logowania$login), from = "UTF-8", to = "windows-1250")
-    levels(pracownicy$imie) <- iconv(levels(pracownicy$imie), from = "UTF-8", to = "windows-1250")
+    assign("pracownicy", pracownicy, envir = .GlobalEnv)
+    assign("logowania", logowania, envir = .GlobalEnv)
   }
 
   packageStartupMessage(proton.start)
