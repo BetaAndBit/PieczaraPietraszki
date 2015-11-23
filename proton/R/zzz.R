@@ -7,12 +7,15 @@
   "
   if (.Platform$OS.type == 'windows') {
     proton.start <- smart_iconv(proton.start)
-    levels(pracownicy$nazwisko) <- smart_iconv(levels(pracownicy$nazwisko))
-    levels(pracownicy$imie) <- smart_iconv(levels(pracownicy$imie))
-    levels(pracownicy$login) <- smart_iconv(levels(pracownicy$login))
-    levels(logowania$login) <- smart_iconv(levels(logowania$login))
-    assign("pracownicy", pracownicy, envir = .GlobalEnv)
-    assign("logowania", logowania, envir = .GlobalEnv)
+    can_convert <- !is.na(iconv(levels(pracownicy$nazwisko), from = "UTF-8", to = "windows-1250")[1])
+    if (can_convert) {
+      levels(pracownicy$nazwisko) <- smart_iconv(levels(pracownicy$nazwisko))
+      levels(pracownicy$imie) <- smart_iconv(levels(pracownicy$imie))
+      levels(pracownicy$login) <- smart_iconv(levels(pracownicy$login))
+      levels(logowania$login) <- smart_iconv(levels(logowania$login))
+      assign("pracownicy", pracownicy, envir = .GlobalEnv)
+      assign("logowania", logowania, envir = .GlobalEnv)
+    }
   }
 
   packageStartupMessage(proton.start)
