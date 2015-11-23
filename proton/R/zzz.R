@@ -7,7 +7,7 @@
   "
   if (.Platform$OS.type == 'windows') {
     proton.start <- smart_iconv(proton.start)
-    can_convert <- !is.na(iconv(levels(pracownicy$nazwisko), from = "UTF-8", to = "windows-1250")[1])
+    can_convert <- !any(is.na(iconv(levels(pracownicy$nazwisko), from = "UTF-8", to = "windows-1250")))
     if (can_convert) {
       levels(pracownicy$nazwisko) <- smart_iconv(levels(pracownicy$nazwisko))
       levels(pracownicy$imie) <- smart_iconv(levels(pracownicy$imie))
