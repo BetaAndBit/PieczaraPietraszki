@@ -2,26 +2,26 @@
 #'
 #' @description
 #' Funkcja \code{proton} pozwala na rozwiązywanie zadań w grze ,,Włam do Protona''.
-#' Wystarczy rozwiazać cztery zagadki by dostać się na konto Pietraszki!
+#' Wystarczy rozwiązać cztery zagadki by dostać się na konto Pietraszki!
 #'
-#' @param ... Funkcja proton przyjmuje rózne argumenty w zależności od tego, którą zagadkę rozwiązujemy.
+#' @param ... Funkcja proton przyjmuje różne argumenty w zależności od tego, którą zagadkę rozwiązujemy.
 #' Zobacz opis szczegółowy aby poznać pełną listę argumentów.
 #'
 #' @details W każdej sytuacji, jeżeli potrzebujemy dodatkowych wskazówek, należy dodać argument `wskazowka=TRUE`.
 #'
-#' Aby dowiedzić się więcej o użtkowniku na serwerze proton należy podać argumenty `action = "login", login="XYZ".
+#' Aby dowiedzieć się więcej o użytkowniku na serwerze proton należy podać argumenty `action = "login", login="XYZ".
 #'
 #' Aby zalogować się do protona należy podać argumenty `action = "login", login="XYZ", password="ABC"`.
 #' Jeżeli hasło pasuje do loginu, wtedy uzyskamy komunikat o poprawnym zalogowaniu.
 #'
-#' Aby zalogowac się do innego serwera niż proton, należy podać argumenty `action = "server", host="XYZ"`.
+#' Aby zalogować się do innego serwera niż proton, należy podać argumenty `action = "server", host="XYZ"`.
 #'
 #' Uwaga:
 #'
 #' Gra ,,Włam do Protona'' jest projektem edukacyjnym Fundacji SmarterPoland dostępnym bezpłatnie.
 #' Pomóż nam tworzyć kolejne gry edukacyjne przekazując darowiznę na konto fundacji wskazanym na stronie
 #' \url{http://smarterpoland.pl/index.php/fundacja/}.
-#' Nawet kwoty rzędu 10 zł uławtią nam tworzenie i utrzymywanie kolejnych projektów edukacyjnych!
+#' Nawet kwoty rzędu 10 zł ułatwią nam tworzenie i utrzymywanie kolejnych projektów edukacyjnych!
 #' Dziękujemy!
 #'
 #' @author

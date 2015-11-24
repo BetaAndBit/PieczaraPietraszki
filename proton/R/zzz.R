@@ -23,7 +23,7 @@
 
 smart_iconv <- function(res) {
   tmp <- iconv(res, from = "UTF-8", to = "windows-1250")
-  if (is.na(tmp[1])) {
+  if (any(is.na(tmp))) {
     return(res)
   }
   tmp
