@@ -15,20 +15,10 @@ Remember that at any time you may add `hint=TRUE` argument to the executed comma
 
 
 dcode <- function(tex) {
-#  let <- sort(unique(unlist(strsplit(texts, split=""))))
-#  names(let) <- rev(let)
-  let <- structure(c("\n", " ", "_", ",", ";", ":", "!", "?", ".", "'",
-                     "=", "\"", "(", ")", "/", "`", "=", "0", "1", "2", "3", "4",
-                     "6", "7", "8", "9", "a", "A", "b", "B", "c", "C", "d", "e", "f",
-                     "F", "g", "h", "H", "i", "I", "j", "J", "k", "l", "L", "m", "n",
-                     "N", "o", "O", "p", "P", "q", "r", "s", "S", "t", "T", "u", "U",
-                     "v", "w", "W", "x", "X", "y", "Y", "z", "Z"), .Names = c("Z",
-                                                                              "z", "Y", "y", "X", "x", "W", "w", "v", "U", "u", "T", "t", "S",
-                                                                              "s", "r", "q", "P", "p", "O", "o", "N", "n", "m", "L", "l", "k",
-                                                                              "J", "j", "I", "i", "H", "h", "g", "F", "f", "e", "d", "C", "c",
-                                                                              "B", "b", "A", "a", "9", "8", "7", "6", "4", "3", "2", "1", "0",
-                                                                              "=", "`", "/", ")", "(", "\"", "=", "'", ".", "?", "!", ":",
-                                                                              ";", ",", "_", " ", "\n"))
+  tmp1 <- c(LETTERS, letters)
+  tmp2 <- setdiff(unique(unlist(strsplit(texts, split=""))), tmp1)
+  let <- c(tmp1, tmp2)
+  names(let) <- c(rev(tmp1), tmp2)
   sapply(strsplit(tex, split=""), function(x){
     paste(let[x], collapse="")
   })
