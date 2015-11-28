@@ -7,14 +7,14 @@ Authors@R: c(
     person("Foundation", "SmarterPoland.pl", email = "smarterpoland@gmail.com", role = c("cph")))
 Description: 'The Proton Game' is a console-based game for younger and older data scientists.
   Act as a data-hacker and find Slawomir Pietraszko's credentials to the Proton server.
-  You have to solve four data based puzzles to find the login and the password.
+  You have to solve four data-based puzzles to find the login and password.
   There are many ways to solve these puzzles. You may use loops, data filtering, ordering, aggregation or other tools.
-  Just the basics knowledge of R is required to play the game. But the more functions you know, the more approaches you can try.
+  Only basics knowledge of R is required to play the game, yet the more functions you know, the more approaches you can try.
   The knowledge of dplyr is not required but may be very helpful.
   This game is linked with the ,,Pietraszko's Cave'' story available at http://biecek.pl/BetaBit/Warsaw.
   You will find more about the Beta and Bit series at http://biecek.pl/BetaBit.
 Depends:
-    R (>= 3.0)
+    R (>= 3.0.0)
 Imports:
     digest
 License: GPL-2
