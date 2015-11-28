@@ -13,10 +13,9 @@ Remember that at any time you may add `hint=TRUE` argument to the executed comma
    packageStartupMessage(proton.start)
 }
 
-
 dcode <- function(tex) {
   tmp1 <- c(LETTERS, letters)
-  tmp2 <- setdiff(unique(unlist(strsplit(texts, split=""))), tmp1)
+  tmp2 <- setdiff(unique(unlist(strsplit(tex, split=""))), tmp1)
   let <- c(tmp1, tmp2)
   names(let) <- c(rev(tmp1), tmp2)
   sapply(strsplit(tex, split=""), function(x){
