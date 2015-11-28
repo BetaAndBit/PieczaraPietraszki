@@ -12,7 +12,7 @@ on a problem that Bit is trying to solve. See \code{Details} in order to learn m
 }
 \description{
 The \code{proton} function is used for solving problems in the data-based game ,,The Proton Game''.
-Solve four data-based puzzles in order to crack into the Pietraszko's account!
+Solve four data-based puzzles in order to crack into Pietraszko's account!
 }
 \details{
 Every time when some additional hints are needed one should add
@@ -30,10 +30,10 @@ In order to log into a server different from Proton one should pass
 \code{action = "server"}, \code{host="XYZ"} arguments to the \code{proton} function.
 
 ,,The Proton Game'' is a free of charge, educational project of the SmarterPoland.pl Foundation.
-By transferring a donation on the foundation's account which is
-shown on \url{http://smarterpoland.pl/index.php/fundacja/} site, you will help
-us to create another educational games. Even a sum of 10 $ will facilitate
-creating and maintaining subsequent educational projects!
+By transferring a donation on the foundation's account, which is
+shown on site \url{http://smarterpoland.pl/index.php/fundacja/}, you will help
+us to create other educational games. Even an amount of $10 will facilitate
+creation and maintenance of subsequent educational projects!
 Thank you!
 }
 \examples{
