@@ -7,3 +7,4 @@ Depends: R (>= 3.0)
 License: GPL-2
 LazyData: true
 Encoding: UTF-8
+BugReports: https://github.com/BetaAndBit/PieczaraPietraszki/issues
