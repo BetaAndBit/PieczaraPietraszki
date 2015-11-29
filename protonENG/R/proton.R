@@ -42,7 +42,7 @@
 proton <- function(...) {
  args <- list(...)
 
-texts <- dcode(structure(c("kRVGIZHAPL FHVH Z KZHHDLIW DSRXS RH EVIB WRUURXFOG GL TFVHH.\nzG URIHG, GIB GL SZXP ZM ZXXLFMG LU Z KVIHLM DSRXS RH MLG ZH XZFGRLFH ZH kRVGIZHAPL.\n\nyFG DSL RH GSV DVZPVHG KLRMG? rMRGRZO RMEVHGRTZGRLM HFTTVHGH GSZG qLSM rMHVXFIV WLVHM'G XZIV ZYLFG HVXFIRGB ZMW SZH ZM ZXXLFMG LM GSV kILGLM HVIEVI. sV NZB FHV Z KZHHDLIW DSRXS RH VZHB GL XIZXP.\noVG'H ZGGZXP SRH ZXXLFMG URIHG!\n\nkILYOVN 1: uRMW GSV OLTRM LU qLSM rMHVXFIV.\n\nyRG SZH HXIZKKVW VNKOLBVVH' WZGZ (MZNVH ZMW OLTRMH) UILN GSV DDD DVY KZTV LU gVXSMRXZO fMREVIHRGB LU dZIHZD. gSV WZGZ RH RM GSV WZGZ.UIZNV `VNKOLBVVH`. \nmLD, BLFI GZHP RH GL URMW qLSM rMHVXFIV'H OLTRM.\ndSVM BLF URMZOOB URMW LFG DSZG qLSM'H OLTRM RH, FHV `KILGLM(ZXGRLM = \"OLTRM\", OLTRM=\"cba\")` XLNNZMW, DSVIV cba RH rMHVXFIV'H OLTRM.\n",
+texts <- dcode(structure(c("kRVGIZHAPL FHVH Z KZHHDLIW DSRXS RH EVIB WRUURXFOG GL TFVHH.\nzG URIHG, GIB GL SZXP ZM ZXXLFMG LU Z KVIHLM DSRXS RH MLG ZH XZFGRLFH ZH kRVGIZHAPL.\n\nyFG DSL RH GSV DVZPVHG KLRMG? rMRGRZO RMEVHGRTZGRLM HFTTVHGH GSZG qLSM rMHVXFIV WLVHM'G XZIV ZYLFG HVXFIRGB ZMW SZH ZM ZXXLFMG LM GSV kILGLM HVIEVI. sV NZB FHV Z KZHHDLIW DSRXS RH VZHB GL XIZXP.\noVG'H ZGGZXP SRH ZXXLFMG URIHG!\n\nkILYOVN 1: uRMW GSV OLTRM LU qLSM rMHVXFIV.\n\nyRG SZH HXIZKKVW 'VNKOLBVVH' WZGZ (MZNVH ZMW OLTRMH) UILN GSV DDD DVY KZTV LU gVXSMRXZO fMREVIHRGB LU dZIHZD. gSV WZGZ RH RM GSV WZGZ.UIZNV `VNKOLBVVH`. \nmLD, BLFI GZHP RH GL URMW qLSM rMHVXFIV'H OLTRM.\ndSVM BLF URMZOOB URMW LFG DSZG qLSM'H OLTRM RH, FHV `KILGLM(ZXGRLM = \"OLTRM\", OLTRM=\"cba\")` XLNNZMW, DSVIV cba RH rMHVXFIV'H OLTRM.\n",
 "rM `VNKOLBVVH` WZGZHVG GIB GL URMW Z ILD DSRXS SZH `rMHVXFIV` EZOFV RM GSV `HFIMZNV` XLOFNM.\nuFMXGRLMH ORPV `UROGVI` LI `ZIIZMTV` UILN GSV `WKOBI` KZXPZTV NZB YV EVIB FHVUFO.\n",
 "QLSMRMH", "HOZK", "xLMTIZGFOZGRLMH! bLF SZEV ULFMW LFG DSZG qLSM rMHVXFIV'H OLTRM RH!\nrG RH SRTSOB ORPVOB GSZG SV FHVH HLNV GBKRXZO KZHHDLIW.\nyRG WLDMOLZWVW UILN GSV rMGVIMVG Z WZGZYZHV DRGS 1000 NLHG XLNNLMOB FHVW KZHHDLIWH.\nbLF XZM URMW GSRH WZGZYZHV RM GSV `GLK1000KZHHDLIWH` EVXGLI.\n\nkILYOVN 2: uRMW qLSM rMHVXFIV'H KZHHDLIW.\n\nfHV `KILGLM(ZXGRLM = \"OLTRM\", OLTRM=\"cba\", KZHHDLIW=\"zyx\")` XLNNZMW RM LIWVI GL OLT RMGL GSV kILGLM HVIEVI DRGS GSV TREVM XIVWVMGRZOH.\nrU GSV KZHHDLIW RH XLIIVXG, BLF DROO TVG GSV ULOOLDRMT NVHHZTV:\n`hFXXVHH! fHVI RH OLTTVW RM!`.\nlGSVIDRHV BLF DROO TVG:\n`kZHHDLIW LI OLTRM RH RMXLIIVXG!`.\n",
 "fHV GSV YIFGV ULIXV NVGSLW.\nyB FHRMT Z OLLK, GIB GL OLT RM DRGS HFYHVJFVMG KZHHDLIWH UILN `GLK1000KZHHDLIWH` EVXGLI ZH OLMT ZH BLF IVXVREV:\n`hFXXVHH! fHVI RH OLTTVW RM!`.\n",
@@ -73,7 +73,7 @@ texts <- dcode(structure(c("kRVGIZHAPL FHVH Z KZHHDLIW DSRXS RH EVIB WRUURXFOG G
     }
     return(invisible(NULL))
   } else {
-    cat(texts["proton.login.pass.instr.w2"])
+    cat("Bit has spent some time on infiltration of this workstation, but there is nothing interesting. \nFind the workstation that Pietraszko is using most often and try again.")
   }
  }
 
@@ -104,13 +104,7 @@ texts <- dcode(structure(c("kRVGIZHAPL FHVH Z KZHHDLIW DSRXS RH EVIB WRUURXFOG G
        return(texts["proton.login.fail"])
      }
    }
-   # only user is set
-   if (!is.null(args$login) && args$login != texts["log.1"] && is.null(args$password)) {
-     cat(texts["proton.login.weak"])
-     return(invisible(NULL))
-   }
-
-   # user is set to slap and password is provided
+   # user is set to sl and password is provided
    if (!is.null(args$login) && args$login == texts["log.2"] && !is.null(args$password)) {
      if (digest(args$password) == "ce3494fef4545c1b6160e5430d7efe66") {
        cat(texts["proton.final"])
@@ -119,5 +113,12 @@ texts <- dcode(structure(c("kRVGIZHAPL FHVH Z KZHHDLIW DSRXS RH EVIB WRUURXFOG G
        return(texts["proton.login.fail"])
      }
    }
+
+   # only user is set
+   if (!is.null(args$login) && args$login != texts["log.1"]) {
+     cat(texts["proton.login.weak"])
+     return(invisible(NULL))
+   }
+
  }
 }
