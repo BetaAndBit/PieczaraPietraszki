@@ -1,6 +1,6 @@
 Package: proton
 Title: The Proton Game. A data-crunching game from the Beta and Bit series
-Version: 0.9
+Version: 1.0
 Authors@R: c(
     person("Przemysław", "Biecek", email = "przemyslaw.biecek@gmail.com", role = c("aut", "cre")),
     person("Witold", "Chodor", email = "witoldchodor@gmail.com", role = c("trl")),
