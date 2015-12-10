@@ -26,6 +26,9 @@ install_github("BetaAndBit/PieczaraPietraszki/protonENG")
 library(proton)
 ```
 
+Here: http://davetang.org/muse/2015/12/06/learning-r-through-a-mini-game/ you can find step-by-step instructions how to pass this game.
+But first, try to solve these puzzles just by yourself.
+
 
 # Opowiadanie Pieczara Pietraszki
 
