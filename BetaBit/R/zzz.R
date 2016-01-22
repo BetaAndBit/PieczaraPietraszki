@@ -1,28 +1,17 @@
 .onAttach <- function(...) {
-
-  proton.start = " _____ _          _____         _              _____
-|_   _| |_ ___   |  _  |___ ___| |_ ___ ___   |   __|___ _____ ___
-  | | |   | -_|  |   __|  _| . |  _| . |   |  |  |  | .'|     | -_|
-  |_| |_|_|___|  |__|  |_| |___|_| |___|_|_|  |_____|__,|_|_|_|___|
-
-Your goal is to find Slawomir Pietraszko's credentials for the Proton server.
-This is the only way for Bit to find the secret plans of Pietraszko's laboratory. \n
-Enter the `proton()` command in order to start the adventure.\n
-Remember that at any time you may add `hint=TRUE` argument to the executed command in order to get additional suggestions.
-"
-  proton.start = "
+  BB.start = "
 ___      _                       _   ___ _ _      ___
 | _ ) ___| |_ __ _   __ _ _ _  __| | | _ |_) |_   / __|__ _ _ __  ___ ___
 | _ \\/ -_)  _/ _` | / _` | ' \\/ _` | | _ \\ |  _| | (_ / _` | '  \\/ -_|_-<
 |___/\\___|\\__\\__,_| \\__,_|_||_\\__,_| |___/_|\\__|  \\___\\__,_|_|_|_\\___/__/
 
-Choose the game. Type the selected function in the console to start given game.
+Choose the game. To start just type the name of the selected game in the console with parentheses.
 
 1. proton()
 2. crypton()
 "
 
-     packageStartupMessage(proton.start)
+     packageStartupMessage(BB.start)
 }
 
 dcode <- function(tex) {
