@@ -23,3 +23,19 @@ dcode <- function(tex) {
     paste(let[x], collapse="")
   })
 }
+
+
+# names for next functions
+# newton
+# nekton - wszystko co plywa
+# parton - czastka (np. kwarki i gluony)
+# mutton - owca
+# photon
+# carton - opakowanie
+# button
+# skeleton
+# singleton
+# piston - tlok
+# ponton
+# pluton
+
