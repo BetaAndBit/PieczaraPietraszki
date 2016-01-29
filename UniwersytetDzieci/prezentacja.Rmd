@@ -1,0 +1,41 @@
+---
+title: "Uniwersytet Dzieci"
+author: "Przemyslaw Biecek"
+date: "29 January 2016"
+output: html_document
+---
+
+```{r, message=FALSE, warning=FALSE}
+library(knitr)
+library(archivist)
+library(ggplot2)
+
+# options for chunks
+opts_chunk$set(comment=NA, fig.width=6, fig.height=6, results='asis', warning=FALSE, message=FALSE, cache=TRUE)
+
+# store everything in the archivist repo
+setLocalRepo("arepo")
+
+print.ggplot <- function(x, ...) {
+  hash <- saveToRepo(x)
+  al <- alink(hash, repo = "PieczaraPietraszki", user = "BetaAndBit", repoDirGit = "UniwersytetDzieci/arepo")
+  cat("Load: ", al, "\n", sep="")
+  ggplot2:::print.ggplot(x, ...)
+}
+
+```
+
+# Ssaki
+
+```{r}
+library(openxlsx)
+library(scales)
+ssaki <- read.xlsx("SSaki/ssaki.xlsx", 1)
+
+ggplot(ssaki, aes(x=`Wielkość.[cm]`, y=`Waga.[g]`)) +
+  geom_smooth(method="lm", se=FALSE, color="grey") +
+  geom_point() + geom_text(aes(label=Polska.nazwa), hjust=0, nudge_x = .1) +
+  scale_x_log10(label=comma, limits=c(1,100000), breaks=10^(0:5)) + 
+  scale_y_log10(label=comma, limits=c(1,10^9), breaks=10^(0:9))
+
+```
