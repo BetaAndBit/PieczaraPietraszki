@@ -1,0 +1,7 @@
+        Angielska.nazwa        Polska.nazwa Wielkość.[cm] Waga.[g]
+1 Kitti’s hog-nosed bat   Świnionos malutki             3        2
+2            Wood mouse  Myszarka zaroślowa            18       25
+3          Red squirrel Wiewiórka pospolita            40      350
+4   Side-striped jackal    Szakal pręgowany           100    15000
+5         Common wombat    Wombat tasmański           120    35000
+6              Capybara     Kapibara wielka           134    66000
