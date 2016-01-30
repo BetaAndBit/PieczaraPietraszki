@@ -9,6 +9,8 @@ output: html_document
 library(knitr)
 library(archivist)
 library(ggplot2)
+library(openxlsx)
+library(scales)
 
 # options for chunks
 opts_chunk$set(comment=NA, fig.width=6, fig.height=6, results='asis', warning=FALSE, message=FALSE, cache=TRUE)
@@ -27,15 +29,34 @@ print.ggplot <- function(x, ...) {
 
 # Ssaki
 
+Poniższa tabela i wykres przedstawiają zależnośc wielkości od masy różnych ssaków, od tych najmniejszych po najwięszke giganty. Zależność jest liniowa w skali log-log.
+
 ```{r}
-library(openxlsx)
-library(scales)
 ssaki <- read.xlsx("SSaki/ssaki.xlsx", 1)
+
+kable(ssaki)
 
 ggplot(ssaki, aes(x=`Wielkość.[cm]`, y=`Waga.[g]`)) +
   geom_smooth(method="lm", se=FALSE, color="grey") +
   geom_point() + geom_text(aes(label=Polska.nazwa), hjust=0, nudge_x = .1) +
   scale_x_log10(label=comma, limits=c(1,100000), breaks=10^(0:5)) + 
   scale_y_log10(label=comma, limits=c(1,10^9), breaks=10^(0:9))
+
+```
+
+# Psy
+
+Poniższa tabela i wykres przedstawiają zależność wielkości od masy różnych ras psów. Od tych najmniejszych po największe giganty. Zależność jest liniowa w skali log-log.
+
+```{r}
+psy <- read.xlsx("Psy/psy.xlsx", 1)
+
+kable(psy)
+
+ggplot(psy, aes(x=`Wysokość`, y=`Masa`)) +
+  geom_smooth(method="lm", se=FALSE, color="grey") +
+  geom_point() + geom_text(aes(label=Polska.nazwa), hjust=0, nudge_x = .03) +
+  scale_x_log10(label=comma, limits=c(10,200), breaks=10^(1:2)) + 
+  scale_y_log10(label=comma, limits=c(1,10^2), breaks=10^(0:2))
 
 ```
