@@ -1,0 +1,14 @@
+    Angielska.nazwa      Polska.nazwa Wysokość Masa
+1         Chihuahua         Chihuahua       20  2.7
+2 Yorkshire Terrier Yorkshire Terrier       22  3.0
+3            Poodle        Pudel duży       60 24.0
+4         Chow Chow         Chow Chow       55 31.0
+5    Bearded Collie    Bearded collie       55 28.0
+6    Japanese Akita             Akita       70 50.0
+                                                           Odnośnik
+1          http://www.dogsindepth.com/toy_dog_breeds/chihuahua.html
+2  http://www.dogsindepth.com/toy_dog_breeds/yorkshire_terrier.html
+3     http://www.dogsindepth.com/nonsporting_dog_breeds/poodle.html
+4  http://www.dogsindepth.com/nonsporting_dog_breeds/chow_chow.html
+5 http://www.dogsindepth.com/herding_dog_breeds/bearded_collie.html
+6   http://www.dogsindepth.com/spitz_dog_breeds/japanese_akita.html
