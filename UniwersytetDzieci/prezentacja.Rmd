@@ -42,6 +42,14 @@ ggplot(ssaki, aes(x=`Wielkość.[cm]`, y=`Waga.[g]`)) +
   scale_x_log10(label=comma, limits=c(1,100000), breaks=10^(0:5)) + 
   scale_y_log10(label=comma, limits=c(1,10^9), breaks=10^(0:9))
 
+# Czysta mapa
+library(ggthemes)
+ggplot(ssaki, aes(x=`Wielkość.[cm]`, y=`Waga.[g]`)) +
+  geom_point(alpha=0) + 
+  scale_x_log10(label=comma, limits=c(1,5000), breaks=rep(10^(0:4), 3)*c(1,2,5)) + 
+  scale_y_log10(label=comma, limits=c(1,10^9), breaks=rep(10^(0:8), 3)*c(1,2,5)) +
+  theme_bw()
+
 ```
 
 # Psy
@@ -58,5 +66,13 @@ ggplot(psy, aes(x=`Wysokość`, y=`Masa`)) +
   geom_point() + geom_text(aes(label=Polska.nazwa), hjust=0, nudge_x = .03) +
   scale_x_log10(label=comma, limits=c(10,200), breaks=10^(1:2)) + 
   scale_y_log10(label=comma, limits=c(1,10^2), breaks=10^(0:2))
+
+# Czysta
+
+ggplot(psy, aes(x=`Wysokość`, y=`Masa`)) +
+  geom_point(alpha=0) + 
+  scale_x_continuous(label=comma, limits=c(0,100), breaks=seq(0,100,10)) + 
+  scale_y_continuous(label=comma, limits=c(0,100), breaks=seq(0,100,10)) +
+  theme_bw()
 
 ```
