@@ -1,0 +1,5 @@
+  Angielska.nazwa Polska.nazwa Wysokość    Masa
+1             Boy     Chłopiec        1      30
+2        Elephant         Słoń        4    5000
+3      Blue Whale     Wieloryb       30  190000
+4         Sequoia      Sekwoja       95 1900000
