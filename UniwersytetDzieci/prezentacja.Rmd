@@ -76,3 +76,21 @@ ggplot(psy, aes(x=`Wysokość`, y=`Masa`)) +
   theme_bw()
 
 ```
+
+
+# Sekwoja
+
+Poniższa tabela i wykres przedstawiają zależność wielkości od masy różnych organizmów z opowiadania o sekwojach.
+
+```{r}
+sekwoje <- read.xlsx("Sekwoje/Sekwoje.xlsx", 1)
+
+kable(sekwoje)
+
+ggplot(sekwoje, aes(x=`Wysokość`, y=`Masa`)) +
+  geom_smooth(method="lm", se=FALSE, color="grey") +
+  geom_point() + geom_text(aes(label=Polska.nazwa), hjust=0, nudge_x = .03) +
+  scale_x_log10(label=comma, limits=c(0.8,200), breaks=10^(0:2)) + 
+  scale_y_log10(label=comma, limits=c(10,3*10^6), breaks=10^(0:7))
+
+```
