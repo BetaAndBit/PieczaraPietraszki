@@ -16,14 +16,9 @@ library(scales)
 opts_chunk$set(comment=NA, fig.width=6, fig.height=6, results='asis', warning=FALSE, message=FALSE, cache=FALSE)
 
 # store everything in the archivist repo
-setLocalRepo("arepo")
-
-print.ggplot <- function(x, ...) {
-  hash <- saveToRepo(x)
-  al <- alink(hash, repo = "PieczaraPietraszki", user = "BetaAndBit", repoDirGit = "UniwersytetDzieci/arepo")
-  cat("Load: ", al, "\n", sep="")
-  ggplot2:::print.ggplot(x, ...)
-}
+addArchivistHook(class="ggplot",
+                 repoDir = "arepo", 
+                 repo = "PieczaraPietraszki", user = "BetaAndBit", repoDirGit = "UniwersytetDzieci/arepo")
 
 ```
 

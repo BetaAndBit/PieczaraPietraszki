@@ -78,14 +78,9 @@ library(scales)
 opts_chunk$set(comment=NA, fig.width=6, fig.height=6, results='asis', warning=FALSE, message=FALSE, cache=FALSE)
 
 # store everything in the archivist repo
-setLocalRepo(&quot;arepo&quot;)
-
-print.ggplot &lt;- function(x, ...) {
-  hash &lt;- saveToRepo(x)
-  al &lt;- alink(hash, repo = &quot;PieczaraPietraszki&quot;, user = &quot;BetaAndBit&quot;, repoDirGit = &quot;UniwersytetDzieci/arepo&quot;)
-  cat(&quot;Load: &quot;, al, &quot;\n&quot;, sep=&quot;&quot;)
-  ggplot2:::print.ggplot(x, ...)
-}</code></pre>
+addArchivistHook(class=&quot;ggplot&quot;,
+                 repoDir = &quot;arepo&quot;, 
+                 repo = &quot;PieczaraPietraszki&quot;, user = &quot;BetaAndBit&quot;, repoDirGit = &quot;UniwersytetDzieci/arepo&quot;)</code></pre>
 <div id="ssaki" class="section level1">
 <h1>Ssaki</h1>
 <p>Poniższa tabela i wykres przedstawiają zależnośc wielkości od masy różnych ssaków, od tych najmniejszych po najwięszke giganty. Zależność jest liniowa w skali log-log.</p>
