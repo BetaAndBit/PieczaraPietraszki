@@ -78,7 +78,7 @@ library(scales)
 opts_chunk$set(comment=NA, fig.width=6, fig.height=6, results='asis', warning=FALSE, message=FALSE, cache=FALSE)
 
 # store everything in the archivist repo
-addArchivistHook(class=&quot;ggplot&quot;,
+addArchivistHook(class=c(&quot;ggplot&quot;, &quot;knitr_kable&quot;),
                  repoDir = &quot;arepo&quot;, 
                  repo = &quot;PieczaraPietraszki&quot;, user = &quot;BetaAndBit&quot;, repoDirGit = &quot;UniwersytetDzieci/arepo&quot;)</code></pre>
 <div id="ssaki" class="section level1">
@@ -86,7 +86,8 @@ addArchivistHook(class=&quot;ggplot&quot;,
 <p>Poniższa tabela i wykres przedstawiają zależnośc wielkości od masy różnych ssaków, od tych najmniejszych po najwięszke giganty. Zależność jest liniowa w skali log-log.</p>
 <pre class="r"><code>ssaki &lt;- read.xlsx(&quot;SSaki/ssaki.xlsx&quot;, 1)
 
-kable(ssaki)</code></pre>
+print(kable(ssaki))</code></pre>
+<p>Load: <a href="https://github.com/BetaAndBit/PieczaraPietraszki/blob/master/UniwersytetDzieci/arepo/gallery/b6c209ccd451b54effaa4017e2bc6cae.rda?raw=true"><code>archivist::aread('BetaAndBit/PieczaraPietraszki/UniwersytetDzieci/arepo/b6c209ccd451b54effaa4017e2bc6cae')</code></a></p>
 <table>
 <thead>
 <tr class="header">
@@ -185,7 +186,8 @@ ggplot(ssaki, aes(x=`Wielkość.[cm]`, y=`Waga.[g]`)) +
 <p>Poniższa tabela i wykres przedstawiają zależność wielkości od masy różnych ras psów. Od tych najmniejszych po największe giganty. Zależność jest liniowa w skali log-log.</p>
 <pre class="r"><code>psy &lt;- read.xlsx(&quot;Psy/psy.xlsx&quot;, 1)
 
-kable(psy)</code></pre>
+print(kable(psy))</code></pre>
+<p>Load: <a href="https://github.com/BetaAndBit/PieczaraPietraszki/blob/master/UniwersytetDzieci/arepo/gallery/85c7a5abcf97ff0906a0bdd314b652c5.rda?raw=true"><code>archivist::aread('BetaAndBit/PieczaraPietraszki/UniwersytetDzieci/arepo/85c7a5abcf97ff0906a0bdd314b652c5')</code></a></p>
 <table>
 <thead>
 <tr class="header">
@@ -296,7 +298,8 @@ ggplot(psy, aes(x=`Wysokość`, y=`Masa`)) +
 <p>Poniższa tabela i wykres przedstawiają zależność wielkości od masy różnych organizmów z opowiadania o sekwojach.</p>
 <pre class="r"><code>sekwoje &lt;- read.xlsx(&quot;Sekwoje/Sekwoje.xlsx&quot;, 1)
 
-kable(sekwoje)</code></pre>
+print(kable(sekwoje))</code></pre>
+<p>Load: <a href="https://github.com/BetaAndBit/PieczaraPietraszki/blob/master/UniwersytetDzieci/arepo/gallery/eda9fb938ba55be848e5393992d1836e.rda?raw=true"><code>archivist::aread('BetaAndBit/PieczaraPietraszki/UniwersytetDzieci/arepo/eda9fb938ba55be848e5393992d1836e')</code></a></p>
 <table>
 <thead>
 <tr class="header">

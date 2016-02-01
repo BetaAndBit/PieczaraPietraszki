@@ -16,7 +16,7 @@ library(scales)
 opts_chunk$set(comment=NA, fig.width=6, fig.height=6, results='asis', warning=FALSE, message=FALSE, cache=FALSE)
 
 # store everything in the archivist repo
-addArchivistHook(class="ggplot",
+addArchivistHook(class=c("ggplot", "knitr_kable"),
                  repoDir = "arepo", 
                  repo = "PieczaraPietraszki", user = "BetaAndBit", repoDirGit = "UniwersytetDzieci/arepo")
 
@@ -29,7 +29,7 @@ Poniższa tabela i wykres przedstawiają zależnośc wielkości od masy różnyc
 ```{r}
 ssaki <- read.xlsx("SSaki/ssaki.xlsx", 1)
 
-kable(ssaki)
+print(kable(ssaki))
 
 ggplot(ssaki, aes(x=`Wielkość.[cm]`, y=`Waga.[g]`)) +
   geom_smooth(method="lm", se=FALSE, color="grey") +
@@ -54,7 +54,7 @@ Poniższa tabela i wykres przedstawiają zależność wielkości od masy różny
 ```{r}
 psy <- read.xlsx("Psy/psy.xlsx", 1)
 
-kable(psy)
+print(kable(psy))
 
 ggplot(psy, aes(x=`Wysokość`, y=`Masa`)) +
   geom_smooth(method="lm", se=FALSE, color="grey") +
@@ -80,7 +80,7 @@ Poniższa tabela i wykres przedstawiają zależność wielkości od masy różny
 ```{r}
 sekwoje <- read.xlsx("Sekwoje/Sekwoje.xlsx", 1)
 
-kable(sekwoje)
+print(kable(sekwoje))
 
 ggplot(sekwoje, aes(x=`Wysokość`, y=`Masa`)) +
   geom_smooth(method="lm", se=FALSE, color="grey") +
