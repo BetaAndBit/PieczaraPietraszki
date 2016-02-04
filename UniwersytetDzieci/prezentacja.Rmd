@@ -40,10 +40,14 @@ ggplot(ssaki, aes(x=`Wielkość.[cm]`, y=`Waga.[g]`)) +
 # Czysta mapa
 library(ggthemes)
 ggplot(ssaki, aes(x=`Wielkość.[cm]`, y=`Waga.[g]`)) +
-  geom_point(alpha=0) + 
-  scale_x_log10(label=comma, limits=c(1,5000), breaks=rep(10^(0:4), 3)*c(1,2,5)) + 
-  scale_y_log10(label=comma, limits=c(1,10^9), breaks=rep(10^(0:8), 3)*c(1,2,5)) +
-  theme_bw()
+#  geom_point(alpha=0.1) + 
+  coord_trans(x="log10", y="log10") + 
+  scale_x_continuous(label=comma, limits=c(1,5000),breaks=rep(10^(0:4), 3)*c(1,2,5)) + 
+  scale_y_continuous(label=comma, limits=c(1,10^9), breaks=rep(10^(0:8), 2)*c(1,5),
+minor_breaks = rep(10^(0:8),2)*c(2.5,7.5 )) + 
+#  scale_x_log10(label=comma, limits=c(1,5000), breaks=rep(10^(0:4), 3)*c(1,2,5)) + 
+#  scale_y_log10(label=comma, limits=c(1,10^9), breaks=rep(10^(0:8), 3)*c(1,2,5)) +
+  theme_bw() + xlab("Długość [cm]") + ylab("Waga [g]")
 
 ```
 
